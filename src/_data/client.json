@@ -1,15 +1,14 @@
 {
-	"name": "Code Stitch Web Designs",
-	"email": "help@codestitch.app",
-	"phoneForTel": "555-779-4407",
-	"phoneFormatted": "(555) 779-4407",
+	"name": "Peaceful Spas",
+	"email": "peacefulspas@gmail.com",
+	"phoneForTel": "772-341-1128",
+	"phoneFormatted": "(772) 341-1128",
 	"address": {
-		"lineOne": "First Address Line",
-		"lineTwo": "Second Address Line",
-		"city": "Denver",
-		"state": "CO",
-		"zip": "80206",
-		"mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
+		"lineOne": "2605 Malabar Road",
+		"city": "Malabar",
+		"state": "FL",
+		"zip": "32950",
+		"mapLink": "https://goo.gl/maps/mGgdirJZjgaYanGZ7"
 	},
 	"domain": "www.codestitch.app"
 }
