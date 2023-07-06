@@ -1,4 +1,4 @@
-/* PAGE-SPECIFIC STYLES FOR THE PROJECTS PAGE */
+/* PAGE-SPECIFIC STYLES FOR THE INVENTORY PAGE */
 
 /*-- -------------------------- -->
 <---          Gallery           -->
@@ -27,6 +27,7 @@
 			padding: 0;
 			margin: 0 auto calc(60 / 16 * 1rem);
 			display: flex;
+			flex-wrap: wrap;
 			justify-content: center;
 			align-items: flex-start;
 			gap: calc(30 / 16 * 1em);
@@ -40,68 +41,51 @@
 			gap: calc(30 / 16 * 1em);
 		}
 
+		.custom-caption {
+			background-color: var(--primary);
+			color: var(--headerColor);
+		}
+
 		.cs-picture {
 			position: relative;
 			display: block;
 			img {
-				position: absolute;
+				// position: absolute;
 				top: 0;
 				left: 0;
 				height: 100%;
 				width: 100%;
-				object-fit: cover;
+				object-fit: contain;
 			}
 		}
 
-		.cs-row-1 {
-			.cs-picture1 {
-				width: calc(420 / 16 * 1em);
-				height: calc(567 / 16 * 1em);
-			}
-
-			.cs-picture2 {
-				width: calc(420 / 16 * 1em);
-				height: calc(629 / 16 * 1em);
-			}
-
-			.cs-picture3 {
-				width: calc(420 / 16 * 1em);
-				height: calc(512 / 16 * 1em);
-			}
+		.cs-picture1 {
+			width: 100%;
+			height: calc(629 / 12 * 1em);
 		}
 
-		.cs-row-2 {
-			.cs-picture1 {
-				width: calc(420 / 16 * 1em);
-				height: calc(492 / 16 * 1em);
-			}
+	}
+}
 
-			.cs-picture2 {
-				width: calc(420 / 16 * 1em);
-				height: calc(517 / 16 * 1em);
-			}
-
-			.cs-picture3 {
-				width: calc(420 / 16 * 1em);
-				height: calc(629 / 16 * 1em);
-			}
+@media only screen and (min-width: 64rem) {
+	#gallery {
+		.cs-picture1 {
+			width: calc(420 / 16 * 1em);
+			height: 20em;
 		}
+	}
 
-		.cs-row-3 {
-			.cs-picture1 {
-				width: calc(420 / 16 * 1em);
-				height: calc(625 / 16 * 1em);
-			}
 
-			.cs-picture2 {
-				width: calc(420 / 16 * 1em);
-				height: calc(452 / 16 * 1em);
-			}
-
-			.cs-picture3 {
-				width: calc(420 / 16 * 1em);
-				height: calc(629 / 16 * 1em);
-			}
+	.cs-picture {
+		position: relative;
+		display: block;
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
 		}
 	}
 }
