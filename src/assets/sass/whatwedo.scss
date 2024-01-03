@@ -1,0 +1,91 @@
+/* PAGE-SPECIFIC STYLES FOR THE INVENTORY PAGE */
+
+/*-- -------------------------- -->
+<---          Gallery           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px - Contains hover animation */
+@media only screen and (min-width: 0em) {
+	#gallery {
+		/* Centers button */
+		text-align: center;
+		padding: var(--sectionPadding);
+		position: relative;
+		/* Prevents overflow from the image going off screen */
+		overflow: hidden;
+		.cs-container {
+			width: 100%;
+			max-width: calc(1322 / 16 * 1em);
+			margin: auto;
+		}
+
+		.cs-image-group {
+			/* used rem so it doesn't scale with the font size of on parent */
+			font-size: min(1.1vw, 1em);
+			width: 100%;
+			max-width: calc(1322 / 16 * 1em);
+			padding: 0;
+			margin: 0 auto calc(60 / 16 * 1rem);
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: flex-start;
+			gap: calc(30 / 16 * 1em);
+		}
+
+		.cs-row {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: center;
+			gap: calc(30 / 16 * 1em);
+		}
+
+		.custom-caption {
+			background-color: var(--primary);
+			color: var(--headerColor);
+		}
+
+		.cs-picture {
+			position: relative;
+			display: block;
+			img {
+				// position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				object-fit: contain;
+			}
+		}
+
+		.cs-picture1 {
+			width: 100%;
+			height: calc(629 / 12 * 1em);
+		}
+
+	}
+}
+
+@media only screen and (min-width: 64rem) {
+	#gallery {
+		.cs-picture1 {
+			width: calc(420 / 16 * 1em);
+			height: 20em;
+		}
+	}
+
+
+	.cs-picture {
+		position: relative;
+		display: block;
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+}
